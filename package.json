@@ -1,0 +1,27 @@
+{
+  "name": "@rnsdomains/rns-sdk-js",
+  "version": "0.0.1",
+  "description": "A RNS interface module built on NodeJS.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rnsdomains/RNS-SDK-js.git"
+  },
+  "author": "RSK Name Service",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "eth-ens-namehash": "^2.0.8",
+    "solc": "^0.4.24",
+    "web3": "^1.0.0-beta.35"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
