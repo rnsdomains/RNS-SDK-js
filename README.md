@@ -1,5 +1,10 @@
 # RNS-SDK-js
 
+<!-- NPM Version -->
+<a href="https://www.npmjs.com/package/@rnsdomains/rns-sdk-js">
+	<img src="http://img.shields.io/npm/v/@rnsdomains/rns-sdk-js.svg"
+alt="NPM version" />
+</a>
 
 Implementations for local resolvers for the RSK Name Service, available for Node.js backends.
 
