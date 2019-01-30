@@ -28,13 +28,13 @@ Finally opan another terminal and run
 ## Usage and Getting Started
 In a Javascript project:
 
-	$ npm install rns-sdk-js
+	$ npm install @rnsdomains/rns-sdk-js
 
 In a JavaScript file:
 
 ```
 // import RNS's Resolver SDK object.
-var Resolver = require('rns-sdk-js');
+var Resolver = require('@rnsdomains/rns-sdk-js');
 resolver = new Resolver(web3.currentProvider, resolverAddress, resolverABI);
 ```
 
