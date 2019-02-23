@@ -1,5 +1,5 @@
-var Web3 = require('web3');
-var namehash = require('eth-ens-namehash')
+const Web3 = require('web3');
+const namehash = require('eth-ens-namehash')
 const defaultAbi = require('./json/resolver.json');
 const defaultNode = "https://public-node.testnet.rsk.co";
 const defaultResolverAddress = "0x59313581e7d735793962e16b8d0b10636bf53ae7"
@@ -38,36 +38,36 @@ class ResolverContract {
 		this.web3 = new Web3(nodeProvider);
 		this.address = resolverAddress;	
 		this.abi = resolverAbi;
-		this.resolverContract = new this.web3.eth.Contract(JSON.parse(this.abi), this.address);
+		this.resolverContract = new this.web3.eth.Contract(this.abi, this.address);
 	}
 
 	/**
 	 * Returns the address associated with an RNS node.
 	 * or 0x00 if address is not set.
 	 * @param {string} nameDomain 
-	 * @returns {object} A promise for the contract instance.
+	 * @returns {Promise<string>} A promise for the contract instance. The address associated with the nameDomain
 	 */
 
 	addr(nameDomain) {
-		return this.resolverContract.methods.addr(this.getNode(nameDomain)).call();
+		return this.resolverContract.methods.addr(ResolverContract.getNode(nameDomain)).call();
 	}
 
 	/**
 	 * Returns true if the specified node has the specified record type.
 	 * @param {string} nameDomain The RNS' name domain to query.
      * @param {string} kind The record type name, as specified in RNSIP01.
-     * @return {bool} True if this resolver has a record of the provided type on the
+     * @return {Promise<boolean>} True if this resolver has a record of the provided type on the
      *         provided node.
 	 */
 
 	has(nameDomain, kind) {
-		return this.resolverContract.methods.has(this.getNode(nameDomain), this.web3.utils.asciiToHex(kind)).call();
+		return this.resolverContract.methods.has(ResolverContract.getNode(nameDomain), this.web3.utils.asciiToHex(kind)).call();
 	}
 
 	/**
      * Returns true if the resolver implements the interface specified by the provided interfaceID (hash).
      * @param {string} interfaceID The ID (hash) of the interface to check for.
-     * @return {bool} True if the contract implements the requested interface.
+     * @return {Promise<boolean>} True if the contract implements the requested interface.
      */
 
 	supportsInterface(interfaceID) {
@@ -80,10 +80,11 @@ class ResolverContract {
      * @param {string} nameDomain The domain to update.
      * @param {address} addr The address to set.
      * @param fromAccount The spender address
+	 * @return {Promise<void>}
      */
 
 	setAddr(nameDomain, addr, fromAccount){
-		return this.resolverContract.methods.setAddr(this.getNode(nameDomain), addr).send({from: fromAccount})
+		return this.resolverContract.methods.setAddr(ResolverContract.getNode(nameDomain), addr).send({from: fromAccount})
 	}
 
 	/**
@@ -92,21 +93,22 @@ class ResolverContract {
      * @param {string} nameDomain The domain to update.
      * @param hash The address to set.
      * @param {address} fromAccount The spender address
-     */
+	 * @return {Promise<void>}
+	 */
 
 	setContent(nameDomain, hash, fromAccount){
-		return this.resolverContract.methods.setContent(this.getNode(nameDomain), hash).send({from: fromAccount})
+		return this.resolverContract.methods.setContent(ResolverContract.getNode(nameDomain), hash).send({from: fromAccount})
 	}
 
 	/**
 	 * Returns the hash associated with an RNS domain.
 	 * or 0x00 if hash is not set.
 	 * @param {string} nameDomain 
-	 * @returns {object} A promise for the contract instance.
+	 * @returns {Promise<void>} A promise for the contract instance.
 	 */
 	
 	content(nameDomain){
-		return this.resolverContract.methods.content(this.getNode(nameDomain)).call();
+		return this.resolverContract.methods.content(ResolverContract.getNode(nameDomain)).call();
 	}
 
 	/**
@@ -115,7 +117,7 @@ class ResolverContract {
 	 * @returns {hash} The name hash
 	 */
 
-	getNode (nameDomain) {
+	static getNode (nameDomain) {
 		return namehash.hash(nameDomain);
 	}
 }
