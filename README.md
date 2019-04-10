@@ -6,7 +6,7 @@
 alt="NPM version" />
 </a>
 
-Implementations for local resolvers for the RSK Name Service, available for Node.js backends.
+Implementations for local resolvers for the RIF Name Service, available for Node.js backends.
 
 
 
@@ -51,7 +51,7 @@ Simple resolver implementation that allows the owner of any domain to configure 
 
 ## Documentation
 
-For more information, see [RNS Docs](https://docs.rns.rsk.co).
+For more information, see [RNS Docs](https://docs.rns.rifos.org).
 
 # Contributors
 
