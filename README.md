@@ -1,4 +1,6 @@
-# RNS-SDK-js
+<img src="/logo.png" alt="logo" height="200" />
+
+# `RNS-SDK-js`
 
 <!-- NPM Version -->
 <a href="https://www.npmjs.com/package/@rnsdomains/rns-sdk-js">
@@ -60,3 +62,18 @@ For more information, see [RNS Docs](https://docs.rns.rifos.org).
 - [@julianlen](https://github.com/julianlen)
 - [@ilanolkies](https://github.com/ilanolkies)
 - [@alebanzas](https://github.com/alebanzas)
+
+---
+
+## Related links
+
+- [RSK](https://rsk.co)
+    - [Docs](https://docs.rsk.co)
+- [RIF](https://rifos.org)
+    - [Docs](https://www.rifos.org/documentation/)
+    - [Whitepaper](https://docs.rifos.org/rif-whitepaper-en.pdf)
+    - [Testnet faucet](https://faucet.rifos.org)
+- RNS
+    - [Docs](https://docs.rns.rifos.org)
+    - [Manager](https://rns.rifos.org)
+    - [Testnet registrar](https://testnet.rns.rifos.org)
