@@ -10,8 +10,6 @@ alt="NPM version" />
 
 Implementations for local resolvers for the RIF Name Service, available for Node.js backends.
 
-
-
 ## Testing
 
 To run unit tests, clone this repository.
@@ -23,14 +21,14 @@ Install ``Ganache-cli`` for a local blockchain
 
 Finally opan another terminal and run
 
-    $ npm install
-    $ npm test
+    $ yarn install
+    $ yarn test
 
 
 ## Usage and Getting Started
 In a Javascript project:
 
-	$ npm install @rnsdomains/rns-sdk-js
+	$ yarn install @rnsdomains/rns-sdk-js
 
 In a JavaScript file:
 
