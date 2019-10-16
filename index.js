@@ -2,7 +2,7 @@ const Web3 = require('web3');
 const namehash = require('eth-ens-namehash')
 const defaultAbi = require('./json/resolver.json');
 const defaultNode = "https://public-node.testnet.rsk.co";
-const defaultResolverAddress = "0x59313581e7d735793962e16b8d0b10636bf53ae7"
+const defaultResolverAddress = "0x480fee7506db34dde84cfec85057a6bd96b38e1b"
 	
 /**
  * @class
