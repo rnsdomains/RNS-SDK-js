@@ -3,9 +3,10 @@
   "version": "0.0.2",
   "description": "RNS Resolver on Node.js",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "files": [
+    "json/",
+    "index.js"
+  ],
   "scripts": {
     "test": "mocha test"
   },
