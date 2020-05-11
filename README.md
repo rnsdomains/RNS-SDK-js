@@ -1,9 +1,11 @@
 <p align="middle">
     <img src="https://www.rifos.org/assets/img/logo.svg" alt="logo" height="100" >
+</p>
+<p align="middle">
     <h3><code>rns-sdk-js</code></h3>
-    <p>
-        Implementations for local resolvers for the RIF Name Service, available for Node.js backends.
-    </p>
+</p>
+<p align="middle">
+    Implementations for local resolvers for the RIF Name Service, available for Node.js backends.
 </p>
 
 [![CircleCI](https://circleci.com/gh/rnsdomains/rns-sdk-js.svg?style=svg)](https://circleci.com/gh/rnsdomains/rns-sdk-js)
