@@ -1,0 +1,8 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/tmp
+    steps:
+      - run: npm i -g ganache-cli
+      - run: ganache-cli
+      - run: npm test
