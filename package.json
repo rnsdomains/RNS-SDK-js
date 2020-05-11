@@ -19,10 +19,11 @@
     "async": "^2.6.1",
     "eth-ens-namehash": "^2.0.8",
     "solc": "^0.6.7",
-    "web3": "^1.2.7"
+    "web3": "^1.2.7",
+    "minimist": ">=0.2.1"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "mocha": "^7.1.2"
   },
   "resolutions": {
     "lodash": "^4.17.14",
