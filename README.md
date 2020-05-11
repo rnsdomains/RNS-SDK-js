@@ -1,9 +1,7 @@
 <p align="middle">
     <img src="https://www.rifos.org/assets/img/logo.svg" alt="logo" height="100" >
 </p>
-<p align="middle">
-    <h3><code>rns-sdk-js</code></h3>
-</p>
+<h3 align="middle"><code>rns-sdk-js</code></h3>
 <p align="middle">
     Implementations for local resolvers for the RIF Name Service, available for Node.js backends.
 </p>
