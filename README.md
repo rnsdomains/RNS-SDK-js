@@ -6,8 +6,8 @@
     Implementations for local resolvers for the RIF Name Service, available for Node.js backends.
 </p>
 <p align="middle">
-    <a href="https://circleci.com/gh/rnsdomains/rns-sdk-js">
-        <img src="https://circleci.com/gh/rnsdomains/rns-sdk-js.svg?style=svg" alt="CircleCI" />
+    <a href="https://circleci.com/gh/rnsdomains/rns-js-resolver">
+        <img src="https://circleci.com/gh/rnsdomains/rns-js-resolver.svg?style=svg" alt="CircleCI" />
     </a>
     <a href="https://badge.fury.io/js/%40rnsdomains%2Frns-sdk-js">
         <img src="https://badge.fury.io/js/%40rnsdomains%2Frns-sdk-js.svg" alt="logo" />
