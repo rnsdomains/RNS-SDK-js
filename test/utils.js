@@ -7,5 +7,5 @@ function isVMException(ex) {
 }
 
 module.exports = {
-    isVMException : isVMException
+  isVMException : isVMException
 }
